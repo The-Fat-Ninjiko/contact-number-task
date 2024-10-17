@@ -1,0 +1,27 @@
+<div class="container mx-auto p-4">
+  <form (ngSubmit)="save()">
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="name" type="text"
+             [(ngModel)]="contact.name" name="name">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Phone</label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="phone" type="text"
+             [(ngModel)]="contact.phone" name="phone">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="address">Address</label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="address" type="text"
+             [(ngModel)]="contact.address" name="address">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="notes">Notes</label>
+      <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" id="notes"
+                [(ngModel)]="contact.notes" name="notes"></textarea>
+    </div>
+    <div class="flex items-center justify-between">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Save</button>
+    </div>
+  </form>
+</div>
